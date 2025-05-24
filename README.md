@@ -253,7 +253,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 👥 Tác giả
 
-- **Tên của bạn** - [GitHub Profile](https://github.com/pantq1711)
+- Phan An: https://github.com/pantq1711
 - Email: hongan.gv10@gmail.com
 
 ## 🙏 Lời cảm ơn
