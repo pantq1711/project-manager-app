@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_budget"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:strokeColor="#E0E0E0"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Left indicator line -->
+        <View
+            android:id="@+id/indicator_line"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:background="#2196F3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_budget_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Tên khoản mục"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            app:layout_constraintEnd_toStartOf="@+id/tv_budget_amount"
+            app:layout_constraintStart_toEndOf="@+id/indicator_line"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/tv_budget_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Danh mục"
+            android:textSize="14sp"
+            android:textColor="#4A4A4A"
+            android:background="@drawable/category_background"
+            android:padding="6dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_budget_amount"
+            app:layout_constraintStart_toEndOf="@+id/indicator_line"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_title" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tv_budget_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Mô tả chi phí"
+            android:textSize="14sp"
+            android:textColor="#6B6B6B"
+            android:lineSpacingExtra="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_budget_amount"
+            app:layout_constraintStart_toEndOf="@+id/indicator_line"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_category" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tv_budget_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="01/01/2025"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_budget_amount"
+            app:layout_constraintStart_toEndOf="@+id/indicator_line"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_description" />
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/tv_budget_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500,000 VNĐ"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/amount_background"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Status -->
+        <LinearLayout
+            android:id="@+id/status_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_amount">
+
+            <ImageView
+                android:id="@+id/iv_status_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_pending"
+                app:tint="#FF9800"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/tv_budget_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chờ duyệt"
+                android:textSize="13sp"
+                android:textColor="#FF9800"
+                android:textStyle="bold"
+                android:background="@drawable/status_background_pending"
+                android:padding="6dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

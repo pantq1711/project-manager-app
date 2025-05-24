@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project Manager</string>
+
+    <!-- Login and Register -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="no_account">Don\'t have an account? Register here</string>
+    <string name="have_account">Already have an account? Login here</string>
+    <string name="name">Name</string>
+    <string name="logout">Logout</string>
+
+    <!-- Main -->
+    <string name="welcome">Welcome to Project Management App!</string>
+    <string name="task_management">Task Management</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="budget_management">Budget Management</string>
+    <string name="refresh">Refresh</string>
+
+    <!-- Tasks -->
+    <string name="tasks">Tasks</string>
+    <string name="add_task">Add Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="assigned_to">Assigned To</string>
+    <string name="priority">Priority</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="task_list">Task List</string>
+    <string name="due_date">Due: %1$s</string>
+    <string name="pending">Pending</string>
+    <string name="in_progress">In Progress</string>
+    <string name="completed">Completed</string>
+
+    <!-- Chat -->
+    <string name="type_message">Type a message…</string>
+    <string name="send">Send</string>
+    <string name="group_chat_title">Group Chat</string>
+    <string name="anonymous">Anonymous</string>
+
+    <!-- Budget -->
+    <string name="budget_overview">Budget Overview</string>
+    <string name="total_budget">Total budget: %1$s</string>
+    <string name="approved_budget">Approved: %1$s</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="expense_title">Expense Title</string>
+    <string name="amount">Amount (VND)</string>
+    <string name="category">Category</string>
+    <string name="expense_description">Expense Description</string>
+    <string name="expense_list">Expense List</string>
+    <string name="human_resource">Human Resource</string>
+    <string name="equipment">Equipment</string>
+    <string name="material">Material</string>
+    <string name="other">Other</string>
+    <string name="approved">Approved</string>
+    <string name="waiting_approval">Waiting for Approval</string>
+    <string name="date_format">MM/dd/yyyy</string>
+</resources>

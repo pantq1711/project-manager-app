@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "722813776834",
+    "firebase_url": "https://project-management-app-9aa9d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "project-management-app-9aa9d",
+    "storage_bucket": "project-management-app-9aa9d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722813776834:android:29ce9a0bedb869aaf29c5b",
+        "android_client_info": {
+          "package_name": "com.example.projectmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUG6w4KYaxrLM8dhmJjaBBXV6doOJV5mE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

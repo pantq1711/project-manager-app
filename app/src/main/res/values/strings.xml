@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quản lý Dự án</string>
+
+    <!-- Login and Register -->
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="no_account">Chưa có tài khoản? Đăng ký tại đây</string>
+    <string name="have_account">Đã có tài khoản? Đăng nhập tại đây</string>
+    <string name="name">Tên</string>
+    <string name="logout">Đăng xuất</string>
+
+    <!-- Main -->
+    <string name="welcome">Chào mừng đến với Ứng dụng Quản lý Dự án!</string>
+    <string name="task_management">Quản lý nhiệm vụ</string>
+    <string name="group_chat">Chat nhóm</string>
+    <string name="budget_management">Quản lý ngân sách</string>
+    <string name="refresh">Làm mới</string>
+
+    <!-- Tasks -->
+    <string name="tasks">Nhiệm vụ</string>
+    <string name="add_task">Thêm nhiệm vụ</string>
+    <string name="task_title">Tiêu đề nhiệm vụ</string>
+    <string name="task_description">Mô tả nhiệm vụ</string>
+    <string name="assigned_to">Người được giao</string>
+    <string name="priority">Mức độ ưu tiên</string>
+    <string name="low">Thấp</string>
+    <string name="medium">Trung bình</string>
+    <string name="high">Cao</string>
+    <string name="task_list">Danh sách nhiệm vụ</string>
+    <string name="due_date">Hạn: %1$s</string>
+    <string name="pending">Chờ xử lý</string>
+    <string name="in_progress">Đang thực hiện</string>
+    <string name="completed">Hoàn thành</string>
+
+    <!-- Chat -->
+    <string name="type_message">Nhập tin nhắn…</string>
+    <string name="send">Gửi</string>
+    <string name="group_chat_title">Chat nhóm</string>
+    <string name="anonymous">Ẩn danh</string>
+
+    <!-- Budget -->
+    <string name="budget_overview">Tổng quan Ngân sách</string>
+    <string name="total_budget">Tổng ngân sách: %1$s</string>
+    <string name="approved_budget">Đã phê duyệt: %1$s</string>
+    <string name="add_expense">Thêm Khoản Chi</string>
+    <string name="expense_title">Tiêu đề khoản chi</string>
+    <string name="amount">Số tiền (VNĐ)</string>
+    <string name="category">Danh mục</string>
+    <string name="expense_description">Mô tả chi tiết</string>
+    <string name="expense_list">Danh sách Chi phí</string>
+    <string name="human_resource">Nhân sự</string>
+    <string name="equipment">Thiết bị</string>
+    <string name="material">Vật liệu</string>
+    <string name="other">Khác</string>
+    <string name="approved">Đã phê duyệt</string>
+    <string name="waiting_approval">Chờ phê duyệt</string>
+    <string name="date_format">dd/MM/yyyy</string>
+
+
+</resources>

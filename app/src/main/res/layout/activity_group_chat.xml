@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Header -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:elevation="4dp"
+        app:title="Chat Nhóm"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- Messages List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Status bar showing online users -->
+    <LinearLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3F2FD"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_people"
+            app:tint="#2196F3"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 người đang online"
+            android:textSize="12sp"
+            android:textColor="#2196F3" />
+
+    </LinearLayout>
+
+    <!-- Message Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <!-- Attachment Button -->
+        <ImageButton
+            android:id="@+id/btn_attach"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_attachment"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Đính kèm tệp" />
+
+        <!-- Message Input - Updated with black text color -->
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:hint="Nhập tin nhắn..."
+            android:textColorHint="#999999"
+            android:textColor="#000000"
+            android:background="@drawable/chat_input_background"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:maxLines="3"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <!-- Send Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabSize="mini"
+            app:backgroundTint="#2196F3"
+            app:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_send"
+            app:borderWidth="0dp" />
+
+    </LinearLayout>
+
+    <!-- Attachment Preview Layout (visible when file selected) -->
+    <LinearLayout
+        android:id="@+id/layout_attachment_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#E3F2FD"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_attachment_preview"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_file"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_attachment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên tệp"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tv_attachment_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kích thước"
+                android:textSize="12sp"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_remove_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:contentDescription="Xóa tệp đính kèm" />
+    </LinearLayout>
+
+</LinearLayout>

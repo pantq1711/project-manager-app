@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ProjectManager" parent="Theme.MaterialComponents.DayNight">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+
+        <!-- Ensure MaterialComponents styling -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+    </style>
+
+    <!-- Theme without ActionBar -->
+    <style name="Theme.ProjectManager.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- AppBar theme -->
+    <style name="Theme.ProjectManager.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="Theme.ProjectManager.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <!-- CardView Styles -->
+    <style name="CardView.Main">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- TextView Styles -->
+    <style name="TextView.Title" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="TextView.Subtitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="TextView.Caption" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+</resources>

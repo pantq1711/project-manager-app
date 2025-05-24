@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryVariant">#1976D2</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary Brand Colors -->
+    <color name="colorSecondary">#FFC107</color>
+    <color name="colorSecondaryVariant">#FF8F00</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorOnBackground">#212121</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#212121</color>
+
+    <!-- Error Colors -->
+    <color name="colorError">#F44336</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorWarning">#FF9800</color>
+    <color name="colorInfo">#2196F3</color>
+
+    <!-- Task Priority Colors -->
+    <color name="priority_high">#F44336</color>
+    <color name="priority_medium">#FF9800</color>
+    <color name="priority_low">#4CAF50</color>
+
+    <!-- Task Status Colors -->
+    <color name="status_pending">#FF9800</color>
+    <color name="status_in_progress">#2196F3</color>
+    <color name="status_completed">#4CAF50</color>
+
+    <!-- Budget Status Colors -->
+    <color name="budget_approved">#4CAF50</color>
+    <color name="budget_pending">#F44336</color>
+
+    <!-- Chat Colors -->
+    <color name="chat_my_message">#E3F2FD</color>
+    <color name="chat_other_message">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColorHint">#BDBDBD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkGray">#666666</color>
+    <color name="lightGray">#E0E0E0</color>
+    <color name="expenseRed">#E91E63</color>
+    <color name="incomeGreen">#4CAF50</color>
+
+    <!-- Text colors -->
+    <color name="text_color_primary">#333333</color>
+    <color name="text_color_secondary">#666666</color>
+    <color name="text_color_tertiary">#888888</color>
+
+    <!-- Background colors -->
+    <color name="background_light">#F5F7FA</color>
+    <color name="background_white">#FFFFFF</color>
+
+    <!-- Status colors -->
+    <color name="status_approved">#4CAF50</color>
+    <color name="status_high_priority">#F44336</color>
+
+    <!-- Chat bubble colors -->
+    <color name="chat_bubble_own">#2196F3</color>
+    <color name="chat_bubble_other">#FFFFFF</color>
+
+    <!-- Border colors -->
+    <color name="border_light">#E0E0E0</color>
+
+    <!-- Shadow colors -->
+    <color name="shadow_light">#1F000000</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+
+    <!-- Accent Color for compatibility -->
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="status_rejected">#F44336</color>
+
+    <!-- Category colors -->
+    <color name="category_human_resource">#E1F5FE</color>
+    <color name="category_equipment">#F3E5F5</color>
+    <color name="category_material">#FFF3E0</color>
+    <color name="category_other">#F5F5F5</color>
+
+    <!-- Chat colors -->
+    <color name="chat_text_own">#FFFFFF</color>
+    <color name="chat_text_other">#333333</color>
+
+    <!-- Add these if needed -->
+    <color name="dropdown_text">#333333</color>
+    <color name="dropdown_background">#FFFFFF</color>
+    <color name="dropdown_divider">#E0E0E0</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#9E9E9E</color>
+</resources>

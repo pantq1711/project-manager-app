@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude the following files from backup -->
+    <exclude domain="sharedpref" path="firebase_heartbeat.xml" />
+    <exclude domain="sharedpref" path="firebase_installations.xml" />
+    <exclude domain="files" path="instanceid.properties" />
+
+    <!-- Include user preferences -->
+    <include domain="sharedpref" path="user_preferences.xml" />
+</full-backup-content>

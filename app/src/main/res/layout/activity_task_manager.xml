@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Add Task Form -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm Nhiệm vụ Mới"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/et_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tiêu đề nhiệm vụ"
+                android:textColor="#333333"
+                android:textColorHint="#888888"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mô tả chi tiết"
+                android:textColor="#333333"
+                android:textColorHint="#888888"
+                android:minLines="2"
+                android:layout_marginBottom="8dp" />
+
+            <!-- User selection with AutoComplete -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_assigned_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Chọn người được giao"
+                    android:textColor="#333333"
+                    android:textColorHint="#888888"
+                    android:completionThreshold="1"
+                    android:dropDownWidth="match_parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_search_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Tìm người dùng"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+            <!-- Priority and Due Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <Spinner
+                    android:id="@+id/sp_priority"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btn_select_due_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chọn hạn chót"
+                    android:textSize="14sp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+            <!-- Selected due date display -->
+            <TextView
+                android:id="@+id/tv_selected_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hạn chót: 7 ngày kể từ hôm nay"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"
+                android:background="#F0F0F0"
+                android:padding="8dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_add_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm Nhiệm vụ"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#2196F3" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tasks List with filter options -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Danh sách Nhiệm vụ"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <!-- Filter for assigned tasks -->
+                <CheckBox
+                    android:id="@+id/cb_my_tasks_only"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Việc của tôi"
+                    android:textSize="12sp"
+                    android:textColor="#333333" />
+
+                <Button
+                    android:id="@+id/btn_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Làm mới"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_tasks"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Load More Button for Pagination -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_load_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Xem thêm"
+                android:textSize="14sp"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="#2196F3"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/ic_expand_more"
+                app:iconGravity="textStart" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>
